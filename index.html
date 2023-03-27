@@ -1,0 +1,154 @@
+<!DOCTYPE html/>
+<html>
+    <head>
+        <title>HTML Cheat Sheet</title>
+    </head>
+    <body>
+        <a href="blog.html">Go to Blog Page</a>
+        <hr>
+        <!-- Headings -->
+        <h1>Heading One</h1>
+        <h2>Heading Two</h2>
+        <h2>Heading Three</h2>
+        <h2>Heading Four</h2>
+        <h2>Heading Five</h2>
+        <h2>Heading Six</h2>
+
+        <!-- Paragraphs -->
+        <p>
+            <!-- By typing lorem + tab a paragraph of lorem spits out -->
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea expedita nulla tempora dolor ratione tempore, <strong>voluptates laborum natus? Ipsum labore</strong>  nesciunt porro <em>quibusdam delectus</em> , consequuntur natus qui maiores omnis ut? <br>
+
+            <!-- <em></em>  and <strong><strong/> can be wrapped around text I want to stand out. strong bolds the text and em italicizes it. Bothe can later be styled with CSS-->
+
+            <!-- By typiny lorem + the number or words you want(below lorem10)-->
+            Lorem ipsum dolor sit <a href="http://google.com" target="_blank">amet consectetur</a> adipisicing elit. Tempore, possimus.
+
+        <!-- <a><a/> tags wrap hyper links. add the websites address in the href brackets and _blank in a target bracket to have the link open on a new tab. Don't sdd the taget if the link is to a place on your site -->
+        </p>
+
+        <!-- Lists -->
+        <!-- Unordered lists usually used for the navigation bar of a website -->
+        <ul>
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+            <li>List item 4</li>
+        </ul>
+        <!-- Ordered List -->
+        <ol>
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+            <li>List item 4</li>
+        </ol>
+        <!-- Tables -->
+        <table>
+            <thead>
+                <!-- tr stands for table row and th stands for table haeding -->
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <!-- td stands for table data -->
+                    <td>Andrea Stoney</td>
+                    <td>andrea@hotmail.com</td>
+                    <td>44</td>
+                </tr>
+                <tr>
+                    <td>Joe Smith</td>
+                    <td>joe@hotmail.com</td>
+                    <td>54</td>
+                </tr>
+                <tr>
+                    <td>John Doe</td>
+                    <td>john@hotmail.com</td>
+                    <td>33</td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- Don't use tables for a layout -->
+        <br>
+        <hr>
+        <br>
+        <!-- br puts a line break in the text and hr puts a line across -->
+
+        <!-- Forms -->
+        <form action="process.php" method="POST">
+            <div>
+                <label>First Name</label>
+                <input type="text" name="firstName" placeholder="Enter first name">
+            </div>
+            <br>
+            <div>
+                <label>Last Name</label>
+                <input type="text" name="lastName">
+            </div>
+            <br>
+            <div>
+                <label>Email</label>
+                <input type="email" name="email">
+            </div>
+            <br>
+            <div>
+                <label>Message</label>
+                <textarea name="message"></textarea>
+            </div>
+            <div>
+                <label>Gender</label>
+                <select name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label>Age</label>
+                <input type="number" name="age" value="30">
+            </div>
+            <br>
+            <div>
+                <label>Birthday</label>
+                <input type="date" name="birthday">
+            </div>
+            <br>
+            <input type="submit" name="submit" value="Submit">
+
+        </form>
+        <!-- After action in the brackets you insert the page that links to where the form is going. After method's brackets you use POST or GET to tell it which type of action you want it to do -->
+        <!-- label tags diplay to the page, in the input brackets text tells the server what type of element to display and name "first-name" is also telling the server what value of the form to send to the place that the info is going  -->
+        <!-- The gender section is an example of how to make a drop down list -->
+        <!-- The age label is an examle of when a number would be input into a text field and the birthday label is an example of how to display a calender option -->
+        <!-- The placeholder that is used with first name inputs text in an input field until the user starts typing -->
+        <!-- input type submit creates a button that can later be attached to a php file to send the form to -->
+
+        <!-- Buttons -->
+        <button>Click Me</button>
+        <br>
+        <!-- Buttons can be put anywhere on a form but they need javascript added to them for them to do anything -->
+
+        <!-- Images -->
+        <a href="Images/bird.jpeg">
+            <img src="Images/bird.jpeg" alt="little bird" width="200px">
+        </a>
+        <!-- If images are saved in the same directory then you just ahe to input the file name in the src brackets. I this example the image is in an Images folder so Images/bird.jpeg is entered -->
+        <!-- an a tag can be added to make the image clickable. In this example it opens the image in a larger window -->
+
+        <!-- Quotations -->
+        <blockquote cite="http://traversymedia.com">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis assumenda, ipsa perferendis expedita provident eligendi iure, maiores aliquam adipisci facilis quidem veniam praesentium totam dolorum placeat, vero illum cumque temporibus!
+        </blockquote>
+        <!-- blockquote adds a paragraph and you can add the website address that you want to cite in the cite brackets and it wont show up on the website, only if you inspect the page -->
+        
+        <p>The <abbr title="World Wide Web">WWW</abbr>is awesome</p>
+        <!-- using abrv you only www is displayed to the page, but if you hover over it, the World Wide Web appears -->
+
+        <p><cite> HTML Crash Corse</cite></p>
+        <!-- this is another way of using the cite tag to tell the user that the text is cited -->
+    </body>
+</html>
